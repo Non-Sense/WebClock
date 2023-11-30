@@ -37,14 +37,14 @@ function App() {
                         <Typography variant="body1" fontFamily="JetBrains Mono"
                                     textAlign={"left"}>UTC{date.getTimezoneOffset() >= 0 ? "+" : ""}{date.getTimezoneOffset() / 60}</Typography>
                         <Typography variant="h4"
-                                    fontFamily="JetBrains Mono">{date.getFullYear()}/{date.getMonth().toString().padStart(2, '0')}/{date.getDate().toString().padStart(2, '0')} ({days[date.getDay()]})</Typography>
+                                    fontFamily="JetBrains Mono">{date.getFullYear()}/{(date.getMonth()+1).toString().padStart(2, '0')}/{date.getDate().toString().padStart(2, '0')} ({days[date.getDay()]})</Typography>
                         <Typography variant="h2"
                                     fontFamily="JetBrains Mono">{date.getHours().toString().padStart(2, '0')}:{date.getMinutes().toString().padStart(2, '0')}:{date.getSeconds().toString().padStart(2, '0')}.{date.getMilliseconds().toString().padStart(3, '0')}</Typography>
                         <p></p>
 
                         <Typography variant="body1" fontFamily="JetBrains Mono" textAlign={"left"}>UTC</Typography>
                         <Typography variant="h6"
-                                    fontFamily="JetBrains Mono">{date.getUTCFullYear()}/{date.getUTCMonth().toString().padStart(2, '0')}/{date.getUTCDate().toString().padStart(2, '0')} ({days[date.getUTCDay()]})</Typography>
+                                    fontFamily="JetBrains Mono">{date.getUTCFullYear()}/{(date.getUTCMonth().toString()+1).padStart(2, '0')}/{date.getUTCDate().toString().padStart(2, '0')} ({days[date.getUTCDay()]})</Typography>
                         <Typography variant="h4"
                                     fontFamily="JetBrains Mono">{date.getUTCHours().toString().padStart(2, '0')}:{date.getUTCMinutes().toString().padStart(2, '0')}:{date.getUTCSeconds().toString().padStart(2, '0')}.{date.getUTCMilliseconds().toString().padStart(3, '0')}</Typography>
                         <p></p>
