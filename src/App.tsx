@@ -44,7 +44,7 @@ function App() {
 
                         <Typography variant="body1" fontFamily="JetBrains Mono" textAlign={"left"}>UTC</Typography>
                         <Typography variant="h6"
-                                    fontFamily="JetBrains Mono">{date.getUTCFullYear()}/{(date.getUTCMonth().toString()+1).padStart(2, '0')}/{date.getUTCDate().toString().padStart(2, '0')} ({days[date.getUTCDay()]})</Typography>
+                                    fontFamily="JetBrains Mono">{date.getUTCFullYear()}/{(date.getUTCMonth()+1).toString().padStart(2, '0')}/{date.getUTCDate().toString().padStart(2, '0')} ({days[date.getUTCDay()]})</Typography>
                         <Typography variant="h4"
                                     fontFamily="JetBrains Mono">{date.getUTCHours().toString().padStart(2, '0')}:{date.getUTCMinutes().toString().padStart(2, '0')}:{date.getUTCSeconds().toString().padStart(2, '0')}.{date.getUTCMilliseconds().toString().padStart(3, '0')}</Typography>
                         <p></p>
